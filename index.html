@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixel Store — Google Pixel 10 Pro</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/specs.css" />
+    <link rel="stylesheet" href="css/camera.css" />
+    <link rel="stylesheet" href="css/design.css" />
+    <link rel="stylesheet" href="css/ai.css" />
+    <link rel="stylesheet" href="css/reviews.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/video.css" />
+    <link rel="stylesheet" href="css/buy-button.css" />
+</head>
+<body>
+
+   <header class="header">
+        <div class="container header-inner">
+            <div class="logo">
+                <svg class="google-logo" viewBox="0 0 48 48" width="32" height="32">
+                    <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z" />
+                    <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z" />
+                    <path fill="#FBBC05" d="M10.53 28.59A14.5 14.5 0 0 1 9.5 24c0-1.59.28-3.14.76-4.59l-7.98-6.19A23.99 23.99 0 0 0 0 24c0 3.77.87 7.35 2.56 10.56l7.97-5.97z" />
+                    <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 5.97C6.51 42.62 14.62 48 24 48z" />
+                </svg>
+                <span class="logo-text">Pixel <span>Store</span></span>
+            </div>
+
+            <button class="burger" id="burger" aria-label="Меню">
+                <span></span><span></span><span></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#specs">Характеристики</a></li>
+                <li><a href="#camera">Камера</a></li>
+                <li><a href="#design">Дизайн</a></li>
+                <li><a href="#ai">ИИ & Gemini</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+                <li><a href="#" class="login-btn" id="openLoginModal">Войти</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero" id="hero">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="images/hero.video.mp4" type="video/mp4" />
+            Ваш браузер не поддерживает видео.
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>Google <span>Pixel 10 Pro</span></h1>
+            <p>Самый умный телефон с искусственным интеллектом Gemini, профессиональной камерой и 7 годами обновлений.</p>
+            <a href="#reviews" class="btn-primary">Узнать больше</a>
+        </div>
+    </section>
+    <section class="specs" id="specs">
+        <div class="container">
+            <h2 class="section-title">Ключевые <span>характеристики</span></h2>
+
+            <div class="specs-grid">
+                <div class="spec-item" data-modal="modal-tensor">
+                    <div class="icon">🧠</div>
+                    <h3>Google Tensor G5</h3>
+                    <p>TPU мощнее на 60%, ИИ на новом уровне</p>
+                    <span class="spec-hint">Нажмите для подробностей</span>
+                </div>
+                <div class="spec-item" data-modal="modal-camera">
+                    <div class="icon">📸</div>
+                    <h3>100x Pro Zoom</h3>
+                    <p>10x оптический, 42 MP фронтальная</p>
+                    <span class="spec-hint">Нажмите для подробностей</span>
+                </div>
+                <div class="spec-item" data-modal="modal-battery">
+                    <div class="icon">🔋</div>
+                    <h3>Аккумулятор 100 ч</h3>
+                    <p>Быстрая зарядка 70% за 30 мин</p>
+                    <span class="spec-hint">Нажмите для подробностей</span>
+                </div>
+                <div class="spec-item" data-modal="modal-updates">
+                    <div class="icon">🛡️</div>
+                    <h3>7 лет обновлений</h3>
+                    <p>Безопасность и новые функции</p>
+                    <span class="spec-hint">Нажмите для подробностей</span>
+                </div>
+            </div>
+
+            <div class="video-block">
+                <h3 class="video-title">Смотрите Pixel 10 Pro в действии</h3>
+                <div class="video-wrapper">
+                    <iframe width="100%" height="100%"
+                    src="https://www.youtube.com/embed/x4_ahwTAS-I"
+                    title="Google Pixel 10: A new era for business phones"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <p class="video-caption">Официальный обзор Google Pixel 10 Pro</p>
+        </div>
+    </div>
+</section>
+
+<div class="modal-overlay" id="modal-tensor">
+    <div class="modal-content">
+        <button class="modal-close">&times;</button>
+        <h2>Google Tensor G5</h2>
+        <p>Процессор, созданный для искусственного интеллекта. TPU нового поколения обеспечивает до 60% прироста производительности.</p>
+        <ul>
+            <li><strong>TPU:</strong> на 60% мощнее</li>
+            <li><strong>CPU:</strong> на 34% быстрее для ИИ</li>
+            <li><strong>ISP:</strong> улучшенная обработка фото</li>
+        </ul>
+    </div>
+</div>
+
+<div class="modal-overlay" id="modal-camera">
+    <div class="modal-content">
+        <button class="modal-close">&times;</button>
+        <h2>Профессиональная камера</h2>
+        <p>Система из трёх объективов с ИИ-обработкой для идеальных снимков.</p>
+        <ul>
+            <li><strong>Основная:</strong> 50 МП, ƒ/1.68</li>
+            <li><strong>Телефото:</strong> 5x оптический</li>
+            <li><strong>Фронтальная:</strong> 42 МП, 103°</li>
+        </ul>
+    </div>
+</div>
+
+<div class="modal-overlay" id="modal-battery">
+    <div class="modal-content">
+        <button class="modal-close">&times;</button>
+        <h2>Аккумулятор 100 часов</h2>
+        <p>Батарея, которая не подведёт. Режим Extreme Battery Saver продлевает работу до 100 часов.</p>
+        <ul>
+            <li><strong>Ёмкость:</strong> 5000 мАч</li>
+            <li><strong>Зарядка:</strong> 70% за 30 мин</li>
+            <li><strong>Ресурс:</strong> 1600 циклов</li>
+        </ul>
+    </div>
+</div>
+
+<div class="modal-overlay" id="modal-updates">
+    <div class="modal-content">
+        <button class="modal-close">&times;</button>
+        <h2>7 лет обновлений</h2>
+        <p>Безопасность и новые функции на долгие годы.</p>
+        <ul>
+            <li><strong>Системные:</strong> 7 лет новых функций</li>
+            <li><strong>Безопасность:</strong> ежемесячные патчи</li>
+            <li><strong>ИИ:</strong> постоянное улучшение Gemini</li>
+        </ul>
+    </div>
+</div>
+
+<section class="camera" id="camera">
+    <div class="container camera-grid">
+        <div class="camera-image">
+            <video autoplay muted loop playsinline class="camera-video-bg">
+                <source src="images/camera.webm" type="video/webm" />
+                Ваш браузер не поддерживает видео.
+            </video>
+            <div class="camera-overlay">
+                <h3>Профессиональная камера</h3>
+                <p>50 МП · 8K видео · Ночной режим</p>
+            </div>
+        </div>
+        <div class="camera-text">
+            <h2>Профессиональная <span style="color:#4C9AFF;">камера</span></h2>
+            <p>Снимайте как профессионал с 50 МП основным сенсором, 5x телеобъективом и 100x цифровым зумом.</p>
+            <ul>
+                <li>50 МП основная, ƒ/1.68</li>
+                <li>5x телефото (10x оптическое качество)</li>
+                <li>42 МП фронтальная, 103° обзор</li>
+                <li>8K видео, Night Sight, Video Boost</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="design" id="design">
+    <div class="container">
+        <h2 class="section-title">Выберите <span>свой цвет</span></h2>
+
+        <div class="color-picker">
+            <div class="color-phone">
+                <img id="colorPhoneImage" src="images/moonstone.png" alt="Pixel 10 Pro" />
+            </div>
+
+            <div class="color-controls">
+                <button class="arrow-btn" id="prevColor">‹</button>
+
+                <div class="colors-wrapper">
+                    <div class="colors" id="colorList">
+                        <div class="color-card active" data-color="moonstone" data-image="images/moonstone.png">
+                            <div class="color-circle" style="background: #e8e5df;"></div>
+                            <span>Moonstone</span>
+                        </div>
+                        <div class="color-card" data-color="obsidian" data-image="images/obsidian.png">
+                            <div class="color-circle" style="background: #2d2d2d;"></div>
+                            <span>Obsidian</span>
+                        </div>
+                        <div class="color-card" data-color="porcelain" data-image="images/porcelain.png">
+                            <div class="color-circle" style="background: #b8c4c9;"></div>
+                            <span>Porcelain</span>
+                        </div>
+                        <div class="color-card" data-color="jade" data-image="images/jade.png">
+                            <div class="color-circle" style="background: #7cb9a8;"></div>
+                            <span>Jade</span>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="arrow-btn" id="nextColor">›</button>
+            </div>
+
+            <p class="current-color" id="currentColorDisplay">Moonstone</p>
+        </div>
+    </div>
+</section>
+
+<section class="ai" id="ai">
+    <div class="container">
+        <h2 class="section-title">Искусственный <span>интеллект</span> Gemini</h2>
+        <div class="ai-grid">
+            <div class="ai-card">
+                <div class="icon">🗣️</div>
+                <h3>Gemini Live</h3>
+                <p>Общайтесь с ИИ голосом, получайте ответы и идеи</p>
+            </div>
+            <div class="ai-card">
+                <div class="icon">🎬</div>
+                <h3>Генерация видео</h3>
+                <p>Создайте короткий ролик по описанию или фото</p>
+            </div>
+            <div class="ai-card">
+                <div class="icon">📝</div>
+                <h3>Помощник в задачах</h3>
+                <p>Закажите еду, спланируйте поездку через Gemini</p>
+            </div>
+            <div class="ai-card">
+                <div class="icon">☁️</div>
+                <h3>5 ТБ в облаке</h3>
+                <p>Год бесплатного Google AI Pro в подарок</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="reviews" id="reviews">
+    <div class="container">
+        <h2 class="section-title">Мнения <span>пользователей</span></h2>
+        <div class="reviews-grid">
+            <div class="review-item">
+                <div class="avatar">А</div>
+                <div class="name">Алексей</div>
+                <div class="date">10 июня 2026</div>
+                <p>Камера Pixel 10 Pro — это нечто. Ночные снимки и зум 100x реально впечатляют. ИИ помогает в каждом кадре.</p>
+            </div>
+            <div class="review-item">
+                <div class="avatar">М</div>
+                <div class="name">Мария</div>
+                <div class="date">5 июня 2026</div>
+                <p>Перешла с iPhone. Gemini упростил многие задачи, а батарея держится почти два дня.</p>
+            </div>
+            <div class="review-item">
+                <div class="avatar">И</div>
+                <div class="name">Иван</div>
+                <div class="date">1 июня 2026</div>
+                <p>Лучший Android-смартфон года. 7 лет обновлений — это уверенность в завтрашнем дне.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container footer-grid">
+        <div>
+            <h4 style="font-size:20px;">Pixel <span style="color:#4C9AFF;">Store</span></h4>
+            <p style="margin-top:6px; opacity:0.7;">Создан, чтобы удивлять.</p>
+        </div>
+        <div>
+            <h4>Страницы</h4>
+            <a href="#specs">Характеристики</a>
+            <a href="#camera">Камера</a>
+            <a href="#ai">ИИ & Gemini</a>
+        </div>
+        <div>
+            <h4>Контакты</h4>
+            <a href="#">support@pixelstore.com</a>
+            <a href="#">+1 (800) 123-4567</a>
+            <a href="#">store.google.com</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        © 2026 Pixel Store. Все права защищены.
+    </div>
+</footer>
+
+<div class="buy-button">
+    <a href="#" class="btn-buy" id="openBuyModal">Купить Pixel 10 Pro</a>
+</div>
+
+<div class="modal-overlay" id="modal-login">
+    <div class="modal-content modal-login">
+        <button class="modal-close" id="closeLoginModal">&times;</button>
+        <h2>Вход в <span>аккаунт</span></h2>
+        <p>Войдите, чтобы управлять заказами и подписками.</p>
+
+        <form id="loginForm" class="login-form">
+            <div class="form-group">
+                <label for="loginEmail">Email</label>
+                <input type="email" id="loginEmail" placeholder="ivan@example.com" required />
+            </div>
+
+            <div class="form-group">
+                <label for="loginPassword">Пароль</label>
+                <input type="password" id="loginPassword" placeholder="••••••••" required />
+            </div>
+
+            <button type="submit" class="btn-submit">Войти</button>
+        </form>
+
+        <p class="form-note">Нет аккаунта? <a href="#" style="color:var(--accent); text-decoration:none;">Зарегистрируйтесь</a></p>
+    </div>
+</div>
+
+<div class="modal-overlay" id="modal-buy">
+    <div class="modal-content modal-buy">
+        <button class="modal-close" id="closeBuyModal">&times;</button>
+        <h2>Оформить <span>заказ</span></h2>
+        <p>Заполните форму, и мы свяжемся с вами для подтверждения.</p>
+
+        <form id="buyForm" class="buy-form">
+            <div class="form-group">
+                <label for="buyName">Ваше имя</label>
+                <input type="text" id="buyName" placeholder="Иван Иванов" required />
+            </div>
+
+            <div class="form-group">
+                <label for="buyPhone">Телефон</label>
+                <input type="tel" id="buyPhone" placeholder="+7 (999) 123-45-67" required />
+            </div>
+
+            <div class="form-group">
+                <label for="buyEmail">Email</label>
+                <input type="email" id="buyEmail" placeholder="ivan@example.com" required />
+            </div>
+
+            <div class="form-group">
+                <label for="buyColor">Цвет</label>
+                <select id="buyColor">
+                    <option value="moonstone">Moonstone</option>
+                    <option value="obsidian">Obsidian</option>
+                    <option value="porcelain">Porcelain</option>
+                    <option value="jade">Jade</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="buyQuantity">Количество</label>
+                <input type="number" id="buyQuantity" value="1" min="1" max="5" />
+            </div>
+
+            <button type="submit" class="btn-submit">Отправить заказ</button>
+        </form>
+
+        <p class="form-note">Мы свяжемся с вами в течение 15 минут для подтверждения заказа.</p>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+<script src="js/modal.js"></script>
+</body>
+</html>

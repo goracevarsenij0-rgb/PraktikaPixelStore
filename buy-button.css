@@ -1,0 +1,190 @@
+.buy-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+    width: auto;
+    max-width: 280px;
+}
+
+.btn-buy {
+    display: block;
+    width: 100%;
+    padding: 14px 28px;
+    background: var(--accent);
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 60px;
+    box-shadow: 0 8px 32px rgba(76, 154, 255, 0.4);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+}
+
+.btn-buy:hover {
+    background: #3a8ae0;
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 12px 48px rgba(76, 154, 255, 0.55);
+}
+
+.btn-buy:active {
+    transform: scale(0.98);
+}
+
+.modal-buy {
+    max-width: 480px;
+}
+
+.modal-buy h2 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.modal-buy h2 span {
+    color: var(--accent);
+}
+
+.modal-buy p {
+    color: #5f6368;
+    margin-bottom: 24px;
+}
+
+.buy-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #3c4043;
+}
+
+.form-group input,
+.form-group select {
+    padding: 12px 16px;
+    border: 1.5px solid #dadce0;
+    border-radius: 12px;
+    font-size: 16px;
+    font-family: inherit;
+    transition: border 0.3s ease;
+    background: #f8f9fa;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(76, 154, 255, 0.15);
+}
+
+.form-group input::placeholder {
+    color: #9aa0a6;
+}
+
+.btn-submit {
+    padding: 16px 32px;
+    background: var(--accent);
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 16px rgba(76, 154, 255, 0.3);
+    margin-top: 8px;
+}
+
+.btn-submit:hover {
+    background: #3a8ae0;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(76, 154, 255, 0.4);
+}
+
+.btn-submit:active {
+    transform: scale(0.98);
+}
+
+.form-note {
+    font-size: 13px;
+    color: #80868b;
+    text-align: center;
+    margin-top: 16px !important;
+}
+
+/* Адаптив */
+@media (max-width: 640px) {
+    .buy-button {
+        bottom: 16px;
+        right: 16px;
+        max-width: 200px;
+    }
+
+    .btn-buy {
+        padding: 12px 20px;
+        font-size: 14px;
+        white-space: normal;
+        border-radius: 40px;
+    }
+
+    .modal-buy {
+        max-width: 95%;
+        padding: 24px 16px;
+    }
+
+    .modal-buy h2 {
+        font-size: 24px;
+    }
+
+    .form-group input,
+    .form-group select {
+        font-size: 15px;
+        padding: 10px 14px;
+    }
+
+    .btn-submit {
+        font-size: 16px;
+        padding: 14px 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .buy-button {
+        bottom: 12px;
+        right: 12px;
+        max-width: 160px;
+    }
+
+    .btn-buy {
+        font-size: 12px;
+        padding: 10px 16px;
+    }
+
+    .modal-buy h2 {
+        font-size: 20px;
+    }
+
+    .form-group input,
+    .form-group select {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .btn-submit {
+        font-size: 14px;
+        padding: 12px 20px;
+    }
+}
